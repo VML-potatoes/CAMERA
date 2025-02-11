@@ -7,6 +7,7 @@ model = YOLO("paths/yolo11s.pt")
 # 웹캠(또는 비디오 파일 경로)로부터 영상 스트림 시작
 # 웹캠인 경우: 0, 비디오 파일인 경우 "video.mp4"와 같이 경로를 지정
 cap = cv2.VideoCapture(1)
+print(cap)
 
 if not cap.isOpened():
     print("카메라 또는 영상 파일을 열 수 없습니다.")
